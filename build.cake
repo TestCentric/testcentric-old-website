@@ -15,17 +15,17 @@ var DEPLOY_BRANCH = "master";
 
 const string USER_ID = "USER_ID";
 const string USER_EMAIL = "USER_EMAIL";
-const string GITHUB_PASSWORD = "GITHUB_PASSWORD";
+const string GITHUB_ACCESS_TOKEN = "GITHUB_ACCESS_TOKEN";
 
 string UserId;
 string UserEmail;
-string GitHubPassword;
+string GitHubAccessToken;
 
 Setup((context) =>
 {
     UserId = context.EnvironmentVariable(USER_ID);
     UserEmail = context.EnvironmentVariable(USER_EMAIL);
-    GitHubPassword = context.EnvironmentVariable(GITHUB_PASSWORD);
+    GitHubAccessToken = context.EnvironmentVariable(GITHUB_ACCESS_TOKEN);
 });
 
 Task("Build")
@@ -58,7 +58,7 @@ Task("Deploy")
 
         GitAddAll(DEPLOY_DIR);
         GitCommit(DEPLOY_DIR, UserId, UserEmail, "Deploy site to GitHub Pages");
-        GitPush(DEPLOY_DIR, UserId, GitHubPassword, DEPLOY_BRANCH);
+        GitPush(DEPLOY_DIR, UserId, GitHubAccessToken, DEPLOY_BRANCH);
     });
 
 Task("Default")
