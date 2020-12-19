@@ -1,8 +1,20 @@
 #recipe Docs
 
+using System.IO;
+
 // Customize your settings and add new ones here
 Settings[Keys.Host] = "test-centric.org";
 Settings[DocsKeys.Title] = "TestCentric";
 Settings[DocsKeys.Logo] = "/assets/img/testcentriclogo.png";
+Settings[DocsKeys.ApiPath] = "tc-lite/api";
+Settings[DocsKeys.SourceFiles] = new []
+{
+    Path.GetFullPath("../tc-lite/src/tclite/*.cs"),
+    Path.GetFullPath("../tc-lite/src/tclite/Attributes/*.cs"),
+    Path.GetFullPath("../tc-lite/src/tclite/Constraints/*.cs"), 
+    Path.GetFullPath("../tc-lite/src/tclite/Interfaces/*.cs"),
+    Path.GetFullPath("../tc-lite/src/tclite/Runners/TestRunner.cs")
+};
+Settings[DocsKeys.IncludeGlobalNamespace] = false;
 
 // Add any pipeline customizations here
