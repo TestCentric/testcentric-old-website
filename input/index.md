@@ -1,7 +1,8 @@
-Title: About TestCentric
+Title: TestCentric
 ---
+# About the Name
 
-The name comes from the phrase "Test-Centric Development," a term I use when working with
+Our name comes from the phrase "Test-Centric Development," a term I use when working with
 software teams. It describes an approach where pretty much everything a team does has a test of
 some kind behind it, ranging from micro-tests of the software to more subjective "tests" that
 help us decide what engineering practices work best for us.
