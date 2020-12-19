@@ -2,13 +2,32 @@
     List<Tuple<string, string>> pages = new List<Tuple<string, string>>
     {
         Tuple.Create("Home", Context.GetLink("index.html")),
-        Tuple.Create("GUI Runner", Context.GetLink("/testcentric-gui/")),
-        Tuple.Create("TC-Lite", Context.GetLink("tc-lite")),
+        Tuple.Create("TestCentric Runner", Context.GetLink("/testcentric-gui/")),
+        Tuple.Create("TC-Lite Framework", Context.GetLink("/tc-lite/")),
         //Tuple.Create("Blog", Context.GetLink("blog")),
     };
-    foreach(Tuple<string, string> p in pages)
+
+    int active = 0;
+    string current = Context.GetLink(Document);
+
+    for (int i = 1; i < pages.Count; i++)
     {
-        string active = Context.GetLink(Document).StartsWith(p.Item2) ? "active" : null;
-        <li class="@active"><a href="@p.Item2">@Html.Raw(p.Item1)</a></li>
+        if (current.StartsWith(pages[i].Item2))
+        {
+            active = i;
+        }
+    }
+
+    for(int i = 0; i < pages.Count; i++)
+    {
+        var p = pages[i];
+        if (i == active)
+        {
+            <li class="active"><a href="@p.Item2">@Html.Raw(p.Item1)</a></li>
+        }
+        else
+        {
+            <li><a href="@p.Item2">@Html.Raw(p.Item1)</a></li>
+        }
     }
 }
