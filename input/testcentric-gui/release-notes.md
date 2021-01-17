@@ -1,23 +1,49 @@
 Description: Displays the <a href="release-notes.html">Release Notes</a> showing changes made in each release of TestCentric.
 Order: 9
 ---
+### TestCentric Runner for NUnit 1.6.0 - January 10, 2021
+
+The main feature of this release is the addition of an agent for running tests under .NET 5.0.
+Since the runner itself targets the .NET Framework, this feature is only available when tests
+are run out of process. By default, tests targeting .NET 5.0 will run under that agent, provided
+that .NET 5.0 is installed. The File menu also allows running tests built for earlier versions
+of .NET Core under .NET 5.0.
+
+#### Issues Resolved
+
+* 593 GetExecutingAssembly() returns the path of appdata folder instead of actual location
+* 640 Review tests of Dialogs
+* 648 misaligned Force Stop button
+* 651 Add a .NET 5.0 agent to the build
+* 653 Export Draft Release for use in CHANGES file and on website
+
+### TestCentric Runner for NUnit 1.5.3 - December 23, 2020
+
+This release fixes a critical issue in 1.5.2
+
+#### Issues Resolved
+
+* 631 Website not being rebuilt for production release
+* 632 Move website for gui into testcentric.github.io
+* 637 Document process for creating a release
+* 638 Testcentric 1.5.2: About testcentric throws an unhandled exception
+* 641 Update AboutBox text and ensure it all fits
+* 642 Dashes rather than separators in menus
+
 ### TestCentric Runner for NUnit 1.5.2 - December 16, 2020
 
-#### Build
+#### Issues Resolved
 
 * 626  Tailor content of Release Note created by release build
 
 ### TestCentric Runner for NUnit 1.5.1 - December 14, 2020
 
-#### Build
+#### Issues Resolved
 
-* 617 Migrate "master" branch to "main"
-* 616 Improvements to the Release Process
 * 324 Convert to use new VS project format
-
-#### Documentation
-
 * 603 Add Getting Started section to the documentation
+* 616 Improvements to the Release Process
+* 617 Migrate "master" branch to "main"
 
 ### TestCentric Runner for NUnit 1.5.0 - December 8, 2020
 
@@ -26,22 +52,16 @@ stop, running all teardowns. It then gives the user the option of a forced stop 
 the run does not terminate. In addition, it incorporates major build improvements, which
 will make it easier to do more frequent releases in the future.
 
-#### Feature
+#### Issues Resolved
 
  * 374 Implement two stage Stop, first trying non-forced and then letting user select forced stop.
-
-#### Bugs
-
- * 613 Version 1.4.1 release zip file is missing
- * 607 Clear All  and Check Failed checkboxes do not work correctly
- * 605 Results not being cleared in tree for each new run
-
-#### Build
-
- * 612 Automate final release process
- * 611 Convert projects to new format
- * 602 Add CodeQL analysis to the build
  * 599 Automatically update website
+ * 602 Add CodeQL analysis to the build
+ * 605 Results not being cleared in tree for each new run
+ * 607 Clear All  and Check Failed checkboxes do not work correctly
+ * 611 Convert projects to new format
+ * 612 Automate final release process
+ * 613 Version 1.4.1 release zip file is missing
 
 ### TestCentric Runner for NUnit 1.4.1 - September 3, 2020
 
