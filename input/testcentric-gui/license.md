@@ -1,7 +1,7 @@
 Description: Displays the <a href="license.html">TestCentric Runner license</a>.
 Order: 10
 ---
-Copyright (c) 2018-2020 Charlie Poole
+Copyright (c) 2018-2022 Charlie Poole
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

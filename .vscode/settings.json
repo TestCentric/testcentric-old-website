@@ -1,0 +1,9 @@
+{
+    "markdownlint.config": {
+        "header-style": false,
+        "first-line-heading": false,
+        "first-line-h1": false,
+        "blanks-around-headings": false,
+        "no-inline-html": false
+    }
+}

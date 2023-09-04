@@ -2,45 +2,27 @@ Title: TestCentric
 ---
 # About the Name
 
-Our name comes from the phrase "Test-Centric Development," a term I use when working with
-software teams. It describes an approach where pretty much everything a team does has a test of
-some kind behind it, ranging from micro-tests of the software to more subjective "tests" that
-help us decide what engineering practices work best for us.
+Our name comes from the phrase "Test-Centric Development," a term I use when working with software teams. It describes an approach where pretty much everything a team does has a test of some kind behind it, ranging from micro-tests of the software to more subjective "tests" that help us decide what engineering practices work best for us.
 
-In addition to working with teams and conducting training, the TestCentric group is focused on
-developing tools and techniques that support that approach to software development. Currently,
-all the TestCentric tools are Open Source, although there may be commercial versions of some of
-them in the future.
+In addition to working with teams and conducting training, the TestCentric group is focused on developing tools and techniques that support that approach to software development. Currently, all the TestCentric tools are Open Source, although there may be commercial versions of some of them in the future.
 
 # About Me
 
-I'm Charlie Poole and I've worked in software development since the 1970s. In 2001 I came across Extreme Programming and in particular Test-Driven Development. I was involved in the NUnit project
-beginning around 2002 and still have some involvement today.
+I'm Charlie Poole and I've worked in software development since the 1970s. In 2001 I came across Extreme Programming and in particular Test-Driven Development. I was involved in the NUnit project beginning around 2002 and continue to be involved today.
 
-Much of the tooling that I'm hoping to create will leverage my own work on NUnit but will hopefully go beyond what has been done before.
+Much of the TestCentric tooling leverages work done by me and others on the NUnit team, but it also involves some new directions.
 
 # Software
 
 ## TestCentric GUI Runner
 
-NUnit V2 came with a GUI runner in addition to the console runner. Beginning with NUnit 3,
-no GUI runner is provided. The TestCentric Runner fills that need.
+NUnit V2 came with a GUI runner in addition to the console runner. Beginning with NUnit 3, no GUI runner was provided. Version 1 of the TestCentric Runner was created to fill that gap. It looks and works very much like the NUnit V2 GUI. Of course, it support NUnit 3 tests and - using the standard NUnit extension - NUnit V2 tests as well. The current version of that runner is 1.6.2. Documentation [here](/testcentric-gui).
 
-The 1.x releases of the GUI look and work very much like the NUnit V2 GUI. Of course, they support NUnit 3 tests and - using the standard NUnit extension - NUnit V2 tests as well.
-
-Documentation for the TestCentric Runner is available [here](/testcentric-gui).
-
-## Experimental GUI Runner
-
-A separate Experimental GUI runner is being developed in conjunction with the standard runner. It departs significantly in appearance and function from the version 1 GUI. It will eventually be released as a major upgrade of the TestCentric Runner, version 2.0 or higher.
-
-Currently, the experimental GUI is included in our packages but is considered as pre-alpha software.
+Version 2 of the TestCentric Runner is under development. An __Alpha Version__ is also available, based on the experimental runner, which was released with some of the earlier 1.x versions. The latest alpha release is 2.0.0-alpha5. Documentation is available [here](/testcentric-gui-alpha)
 
 ## TC-Lite Test Framework
 
-TC-Lite is a lightweight test framework in the spirit of NUnitLite, aimed at the creation and
-execution of fast, independent micro-tests. Tests are self-executing, being incorporated in an
-executable assembly, and require no additional infrastructure beyond the framework itself.
+TC-Lite is a lightweight test framework in the spirit of NUnitLite, aimed at the creation and execution of fast, independent micro-tests. Tests are self-executing, being incorporated in an executable assembly, and require no additional infrastructure beyond the framework itself.
 
 Work on TC-Lite is ongoing. Documentation for what has been implemented so far is available [here](/tc-lite).
 

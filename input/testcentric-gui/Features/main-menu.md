@@ -9,7 +9,8 @@ Order: 2
 
 # File Menu
 
-![File Menu](/testcentric-gui/img/filemenu.png)
+![File Menu](/testcentric-gui/img/filemenu.pn    DocsKeys.Category
+g)
 
 <!---#### New Project...
 Closes any open project, prompting the user to save it if it has been changed and then opens a
@@ -58,7 +59,8 @@ more than one runtime version available.
 ## Process Model
 Allows the user to select how Processes are used loading and running the tests. Note that any selection other than **Default** will override process settings specified in an NUnit or other project file.
 
-* **Default**
+* **Default**    DocsKeys.Category
+
 The tests use the NUnit engine default, which is **Single** for one assembly, **Multiple** for more than one.
 
 * **In Process**
