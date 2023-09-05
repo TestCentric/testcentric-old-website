@@ -1,7 +1,10 @@
-Title: Command Line
 Description: Shows to run TestCentric from the command line and lists available options.
 Order: 4
 ---
+<div class="notice">
+    Legacy version 1 Documentation. <a href="/testcentric-gui">View current Version 2 Documentation.</a>
+</div>
+
 **TestCentric** is invoked from the command line as follows:
 
 ```
@@ -28,8 +31,9 @@ Option            | Action
 --noload          | Suppress loading of the most recent test file.
 --run             | Automatically run the loaded tests.
 --unattended      | In conjunction with --run, causes the GUI to exit immediately after running
---full-gui        | Use the standard (full) GUI interface.
---mini-gui        | Use the mini-GUI interface.
+--process=PROCESS | PROCESS isolation for test assemblies. Values: `Single`, `Separate`, `Multiple`. If not specified, defaults to `Separate` for a single assembly or `Multiple` for more than one.
+--inprocess       | Synonym for `--process:Single`
+--domain=DOMAIN   | DOMAIN isolation for test assemblies. Values: `None`, `Single`, `Multiple`. If not specified, defaults to `Single` for a single assembly or `Multiple` for more than one.
 --x86             | Run tests in an X86 process on 64-bit systems.
 --agents=NUMBER   | Specify the maximum NUMBER of test assembly agents to run at one time. If not specified, there is no limit.
 --work=PATH       | PATH to directory used for any output files by default.

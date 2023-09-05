@@ -4,14 +4,13 @@ Order: 1
 ---
 # About TestCentric Runner
 
-NUnit V2 came with both a console runner and a GUI. Beginning with NUnit 3, no GUI runner was provided. The TestCentric GUI was developed to fill that need. Version 1 of the runner is similar in appearance of the NUnit V2 GUI, but has internal modifications to allow it to run NUnit 3 tests. Using a standard NUnit extension, it is also able to run tests written for the NUnit V2 framework. Future releases will eventually support other frameworks.
+NUnit V2 came with both a console runner and a GUI. Beginning with NUnit 3, no GUI runner was provided. The TestCentric GUI was developed to fill that need. Version 1 of the runner was similar in appearance of the NUnit V2 GUI. Version 2 has a new look and offers more flexibility in how tests are displayed.
 
 # Versioning
 
-The TestCentric GUI uses semantic versioning, with specific exceptions and clarification regarding what is considered a breaking change. See the VERSIONING.md file in the root of the distribution for more information.
+The TestCentric GUI continues to use semantic versioning, with specific exceptions and clarification regarding what is considered a breaking change. See the VERSIONING.md file in the root of the distribution for more information.
 
 # License
 
-The GUI is Open Source software, released under the MIT / X11 license. See LICENSE.txt in the root of the distribution or view it [here](/testcentric-gui/docs/license.html).
-
-The software bundles a modified copy of the NUnit test engine, which is also licensed under the MIT / X11 license. In addition, the first version of the GUI is based in part on the NUnit 2.x GUI runner, released under the NUnit license. See NOTICES.txt in the root of the distribution for more information.
+The GUI is Open Source software, released under the MIT / X11 license. See LICENSE.txt in the root of the distribution or view it [here](/testcentric-gui/docs/license.html). The runner uses a modified copy of the NUnit test engine, which is also licensed under the MIT / X11 license.
+>>>>>>> Stashed changes
