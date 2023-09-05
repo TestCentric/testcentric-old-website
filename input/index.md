@@ -16,9 +16,11 @@ Much of the TestCentric tooling leverages work done by me and others on the NUni
 
 ## TestCentric GUI Runner
 
-NUnit V2 came with a GUI runner in addition to the console runner. Beginning with NUnit 3, no GUI runner was provided. Version 1 of the TestCentric Runner was created to fill that gap. It looks and works very much like the NUnit V2 GUI. Of course, it support NUnit 3 tests and - using the standard NUnit extension - NUnit V2 tests as well. The current version of that runner is 1.6.2. Documentation [here](/testcentric-gui).
+NUnit V2 came with a GUI runner in addition to the console runner. Beginning with NUnit 3, no GUI runner was provided. The TestCentric Runner was created to fill that gap.
 
-Version 2 of the TestCentric Runner is under development. An __Alpha Version__ is also available, based on the experimental runner, which was released with some of the earlier 1.x versions. The latest alpha release is 2.0.0-alpha5. Documentation is available [here](/testcentric-gui-alpha)
+All our development work is now focused on Version 2 of the runner. The latest release is 2.0.0-beta2. Documentation is available [here](/testcentric-gui)
+
+Version 1 of the TestCentric GUI is considered legacy but is still availble. It looks and works very much like the NUnit V2 GUI. Of course, it support NUnit 3 tests and - using the standard NUnit extension - NUnit V2 tests as well. The final version of that runner was 1.6.2. Documentation [here](/testcentric-gui-version1).
 
 ## TC-Lite Test Framework
 

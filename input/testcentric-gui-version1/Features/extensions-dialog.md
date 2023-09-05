@@ -23,20 +23,17 @@ not have extenions installed. The list shows the unique `path`, which identifies
 each extension.
 
 #### Description
-The description of the currently selected extension point in the list, indicating
-its general purpose.
+
+The description of the currently selected extension point in the list, indicating its general purpose.
 
 ### Installed Extensions
 
-This section lists all extensions currently installed at the selected extension point
-in the first list. The name of the extension is usually the full name of the class that
-implements it, but may be different in certain cases. The status of an extension may be
-**Enabled** or **Disabled**.
+This section lists all extensions currently installed at the selected extension point in the first list. The name of the extension is usually the full name of the class that implements it, but may be different in certain cases. The status of an extension may be **Enabled** or **Disabled**.
 
 #### Description
-If the author of an extension has provided a description, it is
-shown here when the extension is selected.
+
+If the author of an extension has provided a description, it is shown here when the extension is selected.
 
 #### Properties
-If the selected extension defines any properties, their
-names and values are listed here.
+
+If the selected extension defines any properties, their names and values are listed here.

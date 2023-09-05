@@ -25,8 +25,7 @@ FileOpen dialog to allow selecting the name and location of an assembly or a tes
 
 ## Open...
 
-Closes any open files and then displays a FileOpen dialog to allow selecting the name and location
-of an assembly or supported project file.
+Closes any open files and then displays a FileOpen dialog to allow selecting the name and location of an assembly or supported project file.
 
 ## Close
 
@@ -35,8 +34,7 @@ Closes any open files.
 
 ## Add Test File...
 
-Displays a FileOpen dialog to allow selecting the name and location of an assembly or
-supported project file, which is then added to the currently open file set.
+Displays a FileOpen dialog to allow selecting the name and location of an assembly or supported project file, which is then added to the currently open file set.
 
 <!---## Save
 Saves the currently open project. Opens the Save As dialog if this is the first time the project
@@ -55,11 +53,10 @@ Reloads the tests, merging any changes into the tree.
 
 ## Select Runtime
 
-Displays a list of runtime versions you may select in order to reload
-the tests using that runtime. This submenu is only present if you have
-more than one runtime version available.
+Displays a list of runtime versions you may select in order to reload the tests using that runtime. This submenu is only present if you have more than one runtime version available.
 
 ## Process Model
+
 Allows the user to select how Processes are used loading and running the tests. Note that any selection other than **Default** will override process settings specified in an NUnit or other project file.
 
 * **Default**
@@ -93,8 +90,7 @@ Each test assembly is run in its own AppDomain. This setting is not permitted wh
 Displays a list of recently opened projects and assemblies from which the user is able to select one for opening.
 
 ## Exit
-Closes and exits the application. If a test is running, the user is given the opportunity to
-cancel it and or to allow it to continue.
+Closes and exits the application. If a test is running, the user is given the opportunity to cancel it and or to allow it to continue.
 <!---If the open project has any pending changes, the user
 is given the opportunity to save it--->
 
@@ -103,44 +99,46 @@ is given the opportunity to save it--->
 ![View Menu](/testcentric-gui/img/viewmenu.png)
 
 ## Full Gui
-Displays the complete gui - as in prior versions of NUnit. This includes the
-   errors and failures and other tabs and the progress bar.
+
+Displays the complete gui - as in prior versions of NUnit. This includes the errors and failures and other tabs and the progress bar.
    
 ## Mini Gui
+
 Switches the display to the mini-gui, which consists of the tree display only.
 
 ## GUI Font
+
 Displays a submenu that allows changing the general font used by the GUI.
 
- * **Increase**
+* **Increase**
 
    Increases the size of the font.
 
- * **Decrease**
+* **Decrease**
 
    Decreases the size of the font.
 
- * **Change...**
+* **Change...**
 
    Displays the Font Change dialog.
 
- * **Restore**
+* **Restore**
 
    Restores the default font.
 
 ## Fixed Font
-Displays a submenu that allows changing the fixed font used to display
-console output from the tests.
 
- * **Increase**
+Displays a submenu that allows changing the fixed font used to display console output from the tests.
+
+* **Increase**
 
    Increases the size of the fixed font.</p>
 
- * **Decrease**
+* **Decrease**
 
    Decreases the size of the fixed font.
 
- * **Restore**
+* **Restore**
 
    Restores the default fixed font.
 
@@ -160,9 +158,7 @@ Runs all the tests.
 
 ## Run Selected
 
-Runs the test or tests that are selected in the tree. If checkboxes are visible,
-any checked tests are run by preference. This is the same function provided by
-the Run button.
+Runs the test or tests that are selected in the tree. If checkboxes are visible, any checked tests are run by preference. This is the same function provided by the Run button.
 
 ## Run Failed
 
@@ -170,8 +166,7 @@ Runs only the tests that failed on the previous run.
 
 ## Stop Run
 
-Stops the test run. This is the same function provided by the Stop button. See
-the [Main Window](/testcentric-gui/docs/main-window.html) page for a detailed description.
+Stops the test run. This is the same function provided by the Stop button. See the [Main Window](/testcentric-gui/docs/main-window.html) page for a detailed description.
 
 # Tools Menu
 
@@ -183,6 +178,7 @@ the [Main Window](/testcentric-gui/docs/main-window.html) page for a detailed de
 <h4>Save Results as XML...</h4>--->
 
 ## Save Test Results...
+
 Opens a FileSave Dialog for saving the test results as an nunit3-formatted XML file.
 
 <!---<h4>Exception Details...</h4>
@@ -212,5 +208,6 @@ Displays the TestCentric documentation.
 Displays the NUnit documentation.
 
 ## About TestCentric...
+
 
 Displays info about your version of TestCentric.
