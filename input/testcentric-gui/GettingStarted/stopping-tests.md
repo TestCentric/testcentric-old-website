@@ -2,6 +2,10 @@ Title: Stopping a Test Run
 Description: How to stop a test run without waiting for it to complete.
 Order: 4
 ---
+<div class="notice">
+    Page under development. Needs revision for TestCentric GUI Version 2.
+</div>
+
 # Normal Stop
 
 Once a test run begins, the Stop button is enabled. Clicking it initiates a normal stop. We often call this a "cooperative stop" because it requires cooperation from the test framework.

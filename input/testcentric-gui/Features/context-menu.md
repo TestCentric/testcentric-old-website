@@ -6,6 +6,10 @@ Order: 3
     img {float: right; margin-left: 20px; margin-bottom: 20px}
 </style>
 
+<div class="notice">
+    Page under development. Needs revision for TestCentric GUI Version 2.
+</div>
+
 The context menu is displayed when one of the tree nodes is right-clicked.
 
 ![Context Menu](/testcentric-gui/img/contextmenu.png)

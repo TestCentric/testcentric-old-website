@@ -38,7 +38,7 @@ Task("Preview")
     .Does(() => StartProcess(WYAM, "preview"));
 
 Task("Deploy")
-    //.IsDependentOn("Build")
+    .IsDependentOn("Build")
     .Does(() => 
     {
         if(FileExists("./CNAME"))

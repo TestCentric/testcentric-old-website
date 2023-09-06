@@ -2,6 +2,93 @@ Description: Displays the <a href="release-notes.html">Release Notes</a> showing
 Order: 9
 ---
 
+### TestCentric Runner for NUnit 2.0.0-beta2- September 3, 2023
+
+This release is part of a group of related releases:
+
+- TestCentric Runner 2.0.0-beta2
+- TestCentric Engine 2.0.0-beta2
+- Net 4.6.2 Pluggable Agent 2.1.1
+- Net 6.0 Pluggable Agent 2.1.0
+- Net 7.0 Pluggable Agent 2.1.0
+
+Together they form a kind of plateau in the development of TestCentric and a basis for redirecting that development. Specifically, they will be the last releases where the code is constrained to remain compatibility with the NUnit engine and console runner.
+
+At this point, it's clear that the NUnit and TestCentric engines are evolving in somewhat different directions and that re-merging the code is no longer very likely. The next releases of these packages - and other packages - by TestCentric will continue to support a certain degree of compatibility in usage but we no longer anticipate merging the two engines in the future.
+
+Specific features in these releases:
+
+- There is no longer a zip package for the GUI
+- Agents may now be run from the command-line. (This is intended for testing and debugging rather than as a substitute for the use of the runner.)
+
+#### Breaking Change
+
+- 986 Eliminate zip package
+
+#### Feature
+
+- 817 Run the agent standalone
+
+#### Enhancement
+
+- 990 Update GUI to match latest builds of the engine, pluggable agents and recipe.
+
+#### Bug
+
+- 987 Need a better message if no agents are available
+
+#### Documentation
+
+- 985 TestCentric.GuiRunner 2.0.0-beta1: no agents in zip package
+
+### TestCentric Runner for NUnit 2.0.0-beta1- May 9, 2023
+
+This is the first beta release of the TestCentric Gui Runner.
+
+The major change from the alpha8 release is that agents are now loaded separately from the engine. All built-in agents have now been removed from the engine itself. This completes our pivot to using pluggable agent extensions for all tests. At this point, the engine alone is no longer capable of running any tests. It's up to the runner making use of the agent to ensure that at least one agent extension is installed. To put it another way: the runner decides what kinds of tests it is capable of running and in what environments, not the engine.
+
+In this release of the GUI, agents for .NET Framework 4.6.2, .NET 6.0 and .NET 7.0 are included as dependent packages.. The following additional agents are currently available for user installation: .NET 8.0, .NET 5.0, .NET Core 3.1, .NET Core 2.1, .NET Framework 2.0.
+
+This release was built using the first production release of our TestCentric.Cake.Recipe package.
+
+#### Features
+
+- 977 Add Net70PluggableAgent as a dependency of the GUI
+- 978 Add Net60PluggableAgent as a dependency of the GUI
+- 979 Add Net462PluggableAgent as a dependency of the GUI
+
+#### Bug
+
+- 974 TestCentric.GuiRunner 2.0.0-alpha8: testcentric.extensibility.dll is missing in net462 agent
+
+#### Build
+
+- 983 Update recipe to production version 1.0.0
+- 984 Update engine reference to beta1 release
+
+### TestCentric Runner for NUnit 2.0.0-alpha8- April 25, 2023
+
+This release uses the alpha8 build of the engine and makes extensive use of pluggable agents, which had been available as an experimental feature up to now. Built-in support for the .NET Core 3.1 and .NET 5.0 runtimes has been removed and pluggable agents for each of them have been released as separate extensions. Without the extensions, such tests will now be run under .NET 6.0. In addition, tests may now be run under .NET 8.0 using the .NET 8.0 pluggable engine, available as a download from our MyGet feed. That agent is still in pre-alpha development.
+
+The runner is now built using our cake recipe, TestCentric.Cake.Recipe, which was extended in order to support it.
+
+#### Bug
+
+- 945 TestCentric 2.0.0-alpha7: Invalid DisplayStrategy and NullReferenceException
+
+#### Build
+
+- 947 Add test of .NET Core 2.1 Pluggable Agent
+- 948 Make build script consistent with that of the Engine
+- 951 Add local-only test of .NET 8.0 pluggable agent
+- 955 Test with .NET Core 2.1 and .NET 8.0 pluggable agents, version 2.1.0
+- 957 Build using TestCentric.Cake.Recipe
+- 961 Use TestLevel to reduce number of package tests run
+- 967 Convert unit tests to use NUnitLite
+- 970 Update to latest engine build; eliminate built-in agents for netcore 3.1 and net 5.0
+- 971 Standardize testing of extensions
+- 972 Remove pluggable agent tests from build
+
 ### TestCentric Runner for NUnit 2.0.0-alpha7- February 6, 2023
 
 The primary feature added in this release comes from use of version 2.0.0-alpha7 of the test engine. The GUI is now able to run tests, which target .NET 6.0 and .NET 7.0.

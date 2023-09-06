@@ -34,4 +34,5 @@ Option            | Action
 --agents=NUMBER   | Specify the maximum NUMBER of test assembly agents to run at one time. If not specified, there is no limit.
 --work=PATH       | PATH to directory used for any output files by default.
 --trace=LEVEL     | Set internal trace level. Valid values are `Off`, `Error`, `Warning`, `Info` or `Debug`. `Verbose` is a synonym for `Debug`.
+--param=PARAM     | Specify a parameter to pass to the tests. PARAM is in the format KEY=VALUE.
 --help            | Display the help message and exit.

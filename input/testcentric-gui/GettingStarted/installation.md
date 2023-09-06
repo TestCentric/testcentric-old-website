@@ -4,13 +4,13 @@ Order: 1
 ---
 # Prerequisites
 
-The GUI itself requires runs under the .NET Framework version 4.5 or later, which must be installed on the machine. If you want tests to run under other runtimes, those runtimes must also be installed. The runner directly supports running under .NET Framework 4.0+, .NET Core 3.1, .NET 5.0 and .NET 6.0. Tests targeting earlier runtimes will use an installed higher version. Additional runtimes may be supported through use of Pluggable Agent extensions to the engine.
+The GUI itself runs under the .NET Framework version 4.6.2 or later, which must be installed on the machine. If you want tests to run under other runtimes, those runtimes must also be installed. The runner is bundled with agents supporting test execution under .NET 4.6.2, .NET 6.0 and .NET 7.0. Tests targeting earlier runtimes will use an installed higher version. Additional runtimes are supported through use of Pluggable Agent extensions, which may be downloaded and installed separately.
 
 # Choosing a Package
 
-The GUI is released in three package formats, **chocolatey**, **nuget** and **zip**, all available from the [GitHub project](https://github.com/TestCentric/testcentric-gui/releases) site. The **nuget package** is also available from [nunit.org](https://nunit.org) and the **chocolatey** package from [chocolatey.org](https://chocolatey.org).
+The GUI is released in both **chocolatey** and **nuget** packages. These are available from the [GitHub project](https://github.com/TestCentric/testcentric-gui/releases) site. The **nuget package** is also available from [nunit.org](https://nunit.org) and the **chocolatey** package from [chocolatey.org](https://chocolatey.org).
 
-For each release, all three packages contain the same binaries. The difference is in the user experience provided by each packaging ecosystem.
+For each release, both packages contain the same binaries. The difference is in the user experience provided by each packaging ecosystem.
 
 ## Chocolatey
 
@@ -29,20 +29,6 @@ The **chocolatey** package is recommended for most users. It provides the best u
 1. Installation requires running as administrator.
 2. Installation of chocolatey is slightly more complicated than one might like.
 
-## Zip
-
-The **zip** package is the easiest approach for individual developers without administrative access to their machines. It is also the best way to try out a new version of the GUI without replacing an older version installed through Chocolatey. It is also currently the preferred approach for developers working on Linux. On GitHub, the zip download is named
-`testcentric-gui-x.y.z.zip`, where `x.y.z` is the version.
-
-### Advantages
-
-1. Simple copy deployment with no administrative access needed.
-2. May use a single central location on the machine.
-
-### Drawbacks
-
-1. There is currently no simple way to add Engine Extensions to the zip installation. (I'm working on this!)
-
 ## NuGet
 
 Originally, there was no NuGet package. My feeling was that installing an executable tool, particularly a GUI, is a bad use of NuGet. However, some users expected it to be available, so now it is. Please consider the drawbacks before using it in your team.  On GitHub, the zip download is named `TestCentric.GuiRunner.x.y.z.nupkg`, where `x.y.z` is the version.
@@ -53,7 +39,7 @@ Originally, there was no NuGet package. My feeling was that installing an execut
 
 ### Drawbacks
 
-1. The install must be repeated for each project with which you want to use the GUI.
+1. The install must usually be repeated for each project with which you want to use the GUI.
 2. The package is restored whenever the project is opened, even in a headless CI environment.
 3. The GUI and its dependencies may conflict with other installed runners, which use the NUnit Engine API.
 
@@ -66,17 +52,9 @@ Originally, there was no NuGet package. My feeling was that installing an execut
 3. Issue command `choco install testcentric-gui`.
 4. Optionally, create a desktop shortcut.
 
-## Zip
-
-1. Download `testcentric.gui-x.y.z.zip` from GitHub, where `x.y.z` is the version.
-2. Unzip the contents into a convenient directory.
-3. Optionally, create a shortcut to `testcentric.exe`.
-4. Optionally, add the install directory to your path.
-
 ## NuGet
 
-1. In Visual Studio, navigate to the project in which you want to install the GUI. Note that it doesn't
-matter which project you choose but VS requires you to choose one.
+1. In Visual Studio, navigate to the project in which you want to install the GUI. Note that it doesn't matter which project you choose but VS requires you to choose one.
 2. Right click on either the project or its `References` and select `Manage NuGet`
 3. Select `nuget.org` as the source and Browse for "TestCentric".
 4. Select the `TestCentric.GuiRunner`

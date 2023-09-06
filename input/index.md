@@ -8,9 +8,9 @@ In addition to working with teams and conducting training, the TestCentric group
 
 # About Me
 
-I'm Charlie Poole and I've worked in software development since the 1970s. In 2001 I came across Extreme Programming and in particular Test-Driven Development. I was involved in the NUnit project beginning around 2002 and continue to be involved today.
+I'm Charlie Poole and I've worked in software development since the 1970s. In 2001 I came across Extreme Programming and in particular Test-Driven Development. I was involved in the NUnit project from 2002 to 2021.
 
-Much of the TestCentric tooling leverages work done by me and others on the NUnit team, but it also involves some new directions.
+I left NUnit in order to pursue some new directions in software tooling and TestCentric is the vehicle for that. Of course, much of the TestCentric tooling leverages work done by me and others on the NUnit team.
 
 # Software
 

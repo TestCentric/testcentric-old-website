@@ -2,6 +2,10 @@ Title: Running Tests
 Description: How to load and run a set of tests under.
 Order: 3
 ---
+<div class="notice">
+    Page under development. Needs revision for TestCentric GUI Version 2.
+</div>
+
 # Loading Tests
 
 Normally, when you start the GUI, the most recently used test file will be loaded.

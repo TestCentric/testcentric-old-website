@@ -2,6 +2,10 @@ Title: Starting the GUI
 Description: Starting the TestCentric GUI.
 Order: 2
 ---
+<div class="notice">
+    Page under development. Needs revision for TestCentric GUI Version 2.
+</div>
+
 # Shortcut
 
 If you created a shortcut after the install, simply click it!

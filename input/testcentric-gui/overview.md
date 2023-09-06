@@ -13,4 +13,3 @@ The TestCentric GUI continues to use semantic versioning, with specific exceptio
 # License
 
 The GUI is Open Source software, released under the MIT / X11 license. See LICENSE.txt in the root of the distribution or view it [here](/testcentric-gui/docs/license.html). The runner uses a modified copy of the NUnit test engine, which is also licensed under the MIT / X11 license.
->>>>>>> Stashed changes
