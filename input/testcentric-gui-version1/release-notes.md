@@ -3,7 +3,7 @@ Order: 9
 ---
 
 <div class="notice">
-    Legacy version 1 Documentation. <a href="/testcentric-gui">View current Version 2 Documentation.</a>
+    Legacy version 1 Documentation. <a href="/testcentric-runner/">View current Version 2 Documentation.</a>
 </div>
 
 ### TestCentric Runner for NUnit 1.6.2 - March 24, 2021

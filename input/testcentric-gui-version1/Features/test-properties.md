@@ -7,7 +7,7 @@ Order: 7
 </style>
 
 <div class="notice">
-    Legacy version 1 Documentation. <a href="/testcentric-gui">View current Version 2 Documentation.</a>
+    Legacy version 1 Documentation. <a href="/testcentric-runner/">View current Version 2 Documentation.</a>
 </div>
 
 The Test Properties Dialog is displayed using either the View | Properties menu item on the main menu or the Properties item on the context menu. It shows information about the test and - if it has been run - about the results. The dialog contains a "pin" button in the upper right corner,which causes it to remain open as the user clicks on different tests.

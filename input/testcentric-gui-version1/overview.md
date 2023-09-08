@@ -3,7 +3,7 @@ Description: Provides a <a href="overview">general overview</a> of the TestCentr
 Order: 1
 ---
 <div class="notice">
-    Legacy version 1 Documentation. <a href="/testcentric-gui">View current Version 2 Documentation.</a>
+    Legacy version 1 Documentation. <a href="/testcentric-runner/">View current Version 2 Documentation.</a>
 </div>
 
 # About TestCentric Runner

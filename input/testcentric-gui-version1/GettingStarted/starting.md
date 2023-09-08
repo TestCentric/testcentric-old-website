@@ -3,7 +3,7 @@ Description: Starting the TestCentric GUI.
 Order: 2
 ---
 <div class="notice">
-    Legacy version 1 Documentation. <a href="/testcentric-gui">View current Version 2 Documentation.</a>
+    Legacy version 1 Documentation. <a href="/testcentric-runner/">View current Version 2 Documentation.</a>
 </div>
 
 # Shortcut

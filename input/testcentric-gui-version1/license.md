@@ -2,7 +2,7 @@ Description: Displays the <a href="license.html">TestCentric Runner license</a>.
 Order: 10
 ---
 <div class="notice">
-    Legacy version 1 Documentation. <a href="/testcentric-gui">View current Version 2 Documentation.</a>
+    Legacy version 1 Documentation. <a href="/testcentric-runner/">View current Version 2 Documentation.</a>
 </div>
 
 Copyright (c) 2018-2020 Charlie Poole

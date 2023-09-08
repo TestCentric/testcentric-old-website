@@ -9,7 +9,7 @@ Order: 4
 </style>
 
 <div class="notice">
-    Legacy version 1 Documentation. <a href="/testcentric-gui">View current Version 2 Documentation.</a>
+    Legacy version 1 Documentation. <a href="/testcentric-runner/">View current Version 2 Documentation.</a>
 </div>
 
 ![Mini GUI](/testcentric-gui/img/minigui.png)

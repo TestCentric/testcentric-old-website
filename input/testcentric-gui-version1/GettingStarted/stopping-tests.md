@@ -3,7 +3,7 @@ Description: How to stop a test run without waiting for it to complete.
 Order: 4
 ---
 <div class="notice">
-    Legacy version 1 Documentation. <a href="/testcentric-gui">View current Version 2 Documentation.</a>
+    Legacy version 1 Documentation. <a href="/testcentric-runner/">View current Version 2 Documentation.</a>
 </div>
 
 # Normal Stop

@@ -10,7 +10,7 @@ Order: 1
 </style>
 
 <div class="notice">
-    Legacy version 1 Documentation. <a href="/testcentric-gui">View current Version 2 Documentation.</a>
+    Legacy version 1 Documentation. <a href="/testcentric-runner/">View current Version 2 Documentation.</a>
 </div>
 
 The **TestCentric** Runner shows the tests in an tree display on the left of the main window and provides a visual indication of the success or failure of the tests. It allows you to selectively run single tests or suites and reloads automatically as you modify and re-compile your code. The following is a screenshot of the runner after running the tests in a sample assembly.

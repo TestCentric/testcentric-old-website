@@ -7,7 +7,7 @@ Order: 3
 </style>
 
 <div class="notice">
-    Legacy version 1 Documentation. <a href="/testcentric-gui">View current Version 2 Documentation.</a>
+    Legacy version 1 Documentation. <a href="/testcentric-runner/">View current Version 2 Documentation.</a>
 </div>
 
 The context menu is displayed when one of the tree nodes is right-clicked.

@@ -2,7 +2,7 @@ Description: Shows to run TestCentric from the command line and lists available 
 Order: 4
 ---
 <div class="notice">
-    Legacy version 1 Documentation. <a href="/testcentric-gui">View current Version 2 Documentation.</a>
+    Legacy version 1 Documentation. <a href="/testcentric-runner/">View current Version 2 Documentation.</a>
 </div>
 
 **TestCentric** is invoked from the command line as follows:
