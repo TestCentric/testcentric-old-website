@@ -28,7 +28,7 @@
             if (children != null && children.Count > 0)
             {
                 bool noContent = child.Get<bool>("NoContent");
-                string childHref = noContent ? "#" : "@Context.GetLink(child)";
+                string childHref = noContent ? "#" : Context.GetLink(child);
 
                 // Parent
                 <li class="treeview @parentActive @childSelected">
