@@ -1,8 +1,8 @@
 Title: License
-Description: Displays the TestCentric Runner <a href="license.html">license</a>
+Description: Displays the TestCentric Engine <a href="license.html">license</a>
 Order: 10
 ---
-Copyright (c) 2018-2022 Charlie Poole
+Copyright (c) 2018-2023 Charlie Poole
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

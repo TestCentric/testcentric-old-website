@@ -3,12 +3,14 @@
     {
         Tuple.Create("Home", Context.GetLink("index.html")),
         Tuple.Create("TestCentric Runner", Context.GetLink("/testcentric-gui/")),
+        Tuple.Create("TestCentric Engine", Context.GetLink("/testcentric-engine/")),
+        Tuple.Create("Pluggable Agents", Context.GetLink("/pluggable-agents/")),
         Tuple.Create("TC-Lite Framework", Context.GetLink("/tc-lite/")),
         //Tuple.Create("Blog", Context.GetLink("blog")),
     };
 
+    var current = Context.GetLink(Document);
     int active = 0;
-    string current = Context.GetLink(Document);
 
     for (int i = 1; i < pages.Count; i++)
     {

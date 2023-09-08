@@ -1,4 +1,4 @@
-Description: Displays the <a href="release-notes.html">Release Notes</a> showing changes made in each release of TestCentric.
+Description: Displays the Runner <a href="release-notes.md">release notes</a>
 Order: 9
 ---
 
