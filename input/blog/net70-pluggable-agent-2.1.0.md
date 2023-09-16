@@ -1,4 +1,4 @@
-Title: Net 7.0 Pluggable Agent Released
+Title: Net 7.0 Pluggable Agent 2.1.0 Released
 Published: 9/3/2023
 Category: Release
 Author: Charlie Poole

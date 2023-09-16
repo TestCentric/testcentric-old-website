@@ -1,5 +1,5 @@
-Title: Net 6.0 Pluggable Agent 2.1.0 Released
-Published: 9/3/2023
+Title: Net 8.0 Pluggable Agent 2.2.0 Released
+Published: 9/8/2023
 Category: Release
 Author: Charlie Poole
 ---
