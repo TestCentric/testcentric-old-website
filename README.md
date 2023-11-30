@@ -1,3 +1,7 @@
+**This is the archived original source code for our website, developed using Wyam.
+It has now been replaced with an implementation in Statiq, available in
+repository `testcentric-statiq-website`.**
+
 # TestCentric Website
 
 This is the source code for the TestCentric website, which is deployed
